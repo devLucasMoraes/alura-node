@@ -19,35 +19,35 @@ routes(app)
     {id:2, "titulo": "O Hobiit"}
 ] */
 
-app.get('/livros/:id', (req, res) => {
+/* app.get('/livros/:id', (req, res) => {
     let index = buscaLivro(req.params.id)
     res.json(livros[index])
-})
+}) */
 
 /* app.get('/', (req, res) => {
     res.status(200).send('Curso de Node')
 }) */
 
-app.post('/livros', (req, res) => {
+/* app.post('/livros', (req, res) => {
     livros.push(req.body)
     res.status(201).send('Livro cadastrado com sucesso')
-})
+}) */
 
-app.put('/livros/:id', (req, res) => {
+/* app.put('/livros/:id', (req, res) => {
     let index = buscaLivro(req.params.id)
     livros[index].titulo = req.body.titulo
     res.json(livros)
-})
+}) */
 
-app.delete('/livros/:id', (req, res) => {
+/* app.delete('/livros/:id', (req, res) => {
     let {id} = req.params
     let index = buscaLivro(id)
     livros.slice(index, 1)
     res.send(`Livro ${id} removido com sucesso`)
-})
+}) */
 
-function buscaLivro(id) {
+/* function buscaLivro(id) {
     return livros.findIndex(livro => livro.id == id)
-}
+} */
 
 export default app

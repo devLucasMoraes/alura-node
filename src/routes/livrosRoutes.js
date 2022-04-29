@@ -8,6 +8,7 @@ router
     .get("/livros/:id", livroController.ListarLivroPorId)
     .post("/livros", livroController.CadastrarLivros)
     .put("/livros/:id", livroController.atualizarLivro)
+    .delete("/livros/:id", livroController.excluirLivro)
 
 
 export default router
